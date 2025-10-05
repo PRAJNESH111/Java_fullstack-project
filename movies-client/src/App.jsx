@@ -42,31 +42,31 @@ function App() {
 
       <Routes>
         {/* Login Page */}
-        <Route path="/Login" element={<Login />} />
+        {/* <Route path="/Login" element={<Login />} /> */}
 
         {/* Protected Routes */}
-        <Route
+        {/* <Route
           path="/"
           element={
             <RequireAuth>
               <Layout />
             </RequireAuth>
           }
-        >
-          <Route index element={<Home movies={movies} />} />
-          <Route path="Trailer/:ytTrailerId" element={<Trailer />} />
-          <Route
-            path="/Review/:movieId"
-            element={
-              <Reviews
-                getMovieData={getMovieData}
-                reviews={reviews || []}
-                movie={movie}
-                setReviews={setReviews}
-              />
-            }
-          ></Route>
-        </Route>
+        > */}
+        <Route index element={<Home movies={movies} />} />
+        <Route path="Trailer/:ytTrailerId" element={<Trailer />} />
+        <Route
+          path="/Review/:movieId"
+          element={
+            <Reviews
+              getMovieData={getMovieData}
+              reviews={reviews || []}
+              movie={movie}
+              setReviews={setReviews}
+            />
+          }
+        ></Route>
+        {/* </Route> */}
       </Routes>
     </div>
   );

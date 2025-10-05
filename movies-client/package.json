@@ -1,4 +1,5 @@
 {
+  "homepage": "https://PRAJNESH111.github.io/Java_fullstack-project",
   "name": "movies-client",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -16,6 +19,7 @@
     "@mui/material": "^7.3.1",
     "axios": "^1.11.0",
     "bootstrap": "^5.3.7",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
